@@ -28,4 +28,10 @@ func main() {
 	for idx, data := range name {
 		fmt.Println("Index :", idx, "Data :", string(data)) // data itu bentuknya byte jadi perlu diubah ke string -> string()
 	}
+
+	umur := map[string]int{"Budi": 20, "Sari": 22} //tipe data: map dengan key bertipe string dan value bertipe int
+
+	for nama, u := range umur {
+		fmt.Println(nama, u)
+	}
 }
